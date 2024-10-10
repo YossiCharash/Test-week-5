@@ -63,6 +63,9 @@ def init_chicago_car_accidents(csv_path):
        accidents.insert_one(accident)
     accidents.create_index('BEAT_OF_OCCURRENCE')
     accidents.create_index('inJuries_id')
+    accidents.create_index('CRASH_DATE')
+
+    return True
 
 
 

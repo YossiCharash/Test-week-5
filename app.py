@@ -1,11 +1,11 @@
 from flask import Flask
+from routes.accident_route import Accidents
+
+
 
 app = Flask(__name__)
 
-
-@app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
+app.register_blueprint(Accidents)
 
 
 if __name__ == '__main__':
