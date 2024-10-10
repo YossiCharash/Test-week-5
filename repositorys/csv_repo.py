@@ -11,8 +11,8 @@ def read_csv(csv_path):
 
 
 def init_chicago_car_accidents(csv_path):
-    accidents.drop()
-    inJuries.drop()
+    # accidents.drop()
+    # inJuries.drop()
 
 
 
